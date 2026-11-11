@@ -1,7 +1,7 @@
 const express = require("express");
 const fs = require("fs");
 const app = express();
-const VERSION = "v4";
+const VERSION = "v5";
 app.get("/", (req, res) => res.json({ app: "kbx-lxc-e2e", version: VERSION, build: fs.existsSync("dist/build.json") }));
 app.get("/health", (req, res) => res.send("ok"));
 const port = Number(process.env.PORT) || 3000;
