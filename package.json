@@ -1,0 +1,13 @@
+{
+  "name": "kbx-lxc-e2e",
+  "version": "1.0.0",
+  "private": true,
+  "main": "server.js",
+  "scripts": {
+    "build": "node build.js",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
